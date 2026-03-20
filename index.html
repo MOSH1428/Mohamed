@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Shabaan | AI Engineer & Software Developer</title>
+    <meta name="description" content="Portfolio of Mohamed Shabaan, AI Engineer and Software Developer based in Dakahlia, Egypt.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">M. Shabaan</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-en="About" data-ar="عني">عني</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="المهارات">المهارات</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">المشاريع</a></li>
+                <li><a href="#education" data-en="Education" data-ar="التعليم">التعليم</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle">EN</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="محمد محمود شعبان" data-en="Mohamed Shabaan" data-ar="محمد محمود شعبان">محمد محمود شعبان</h1>
+            <h2 class="role glowing-text" data-en="AI Engineer & Software Developer" data-ar="مهندس ذكاء اصطناعي ومطور برمجيات">مهندس ذكاء اصطناعي ومطور برمجيات</h2>
+            
+            <p class="summary" data-en="An ambitious AI Engineer with a passion for building smart and innovative solutions. Expert in Data Analysis, Machine Learning Models, and developing high-performance Web and Desktop Applications." data-ar="مهندس ذكاء اصطناعي طموح لديه شغف ببناء حلول ذكية ومبتكرة. أمتلك خبرة قوية في تحليل البيانات وتصميم النماذج الذكية، بالإضافة إلى مهارة احترافية في تطوير تطبيقات سطح المكتب الخفيفة، ومواقع الويب المتكاملة. أسعى لتوظيف مهاراتي التقنية في بيئة عمل ديناميكية للمساهمة في مشاريع برمجية متطورة.">
+                مهندس ذكاء اصطناعي طموح لديه شغف ببناء حلول ذكية ومبتكرة. أمتلك خبرة قوية في تحليل البيانات وتصميم النماذج الذكية، بالإضافة إلى مهارة احترافية في تطوير تطبيقات سطح المكتب الخفيفة، ومواقع الويب المتكاملة. أسعى لتوظيف مهاراتي التقنية في بيئة عمل ديناميكية للمساهمة في مشاريع برمجية متطورة.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn" data-en="View Work" data-ar="عرض أعمالي">عرض أعمالي</a>
+                <a href="mailto:contact@example.com" class="btn secondary-btn" data-en="Contact Me" data-ar="تواصل معي">تواصل معي</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="location-info">
+                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Dakahlia, Egypt" data-ar="الدقهلية، مصر">الدقهلية، مصر</span></span>
+                <span><i class="fas fa-phone-alt"></i> <span style="direction: ltr; display: inline-block;">+20 1034191685</span></span>
+                <span class="remote-badge"><i class="fas fa-globe"></i> <span data-en="Remote Work Only" data-ar="العمل عن بعد فقط">العمل عن بعد فقط</span></span>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="profile-blob"></div>
+            <!-- Placeholder for profile image -->
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=400&q=80" alt="Mohamed Shabaan" class="profile-img">
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">المهارات التقنية</h2>
+        <div class="skills-grid">
+            
+            <!-- Skill Card 1 -->
+            <div class="skill-card glass-panel">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h3 data-en="AI & Machine Learning" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</h3>
+                <ul>
+                    <li data-en="Building & training ML/DL models" data-ar="بناء وتدريب نماذج التعلم الآلي والتعلم العميق">بناء وتدريب نماذج التعلم الآلي والتعلم العميق</li>
+                    <li data-en="Big Data Analysis & Pattern Extraction" data-ar="تحليل البيانات الضخمة واستخراج الأنماط">تحليل البيانات الضخمة واستخراج الأنماط</li>
+                    <li style="direction: ltr;">TensorFlow, PyTorch, Scikit-learn</li>
+                </ul>
+            </div>
+
+            <!-- Skill Card 2 -->
+            <div class="skill-card glass-panel">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3 data-en="Programming" data-ar="اللغات والبرمجة">اللغات والبرمجة</h3>
+                <ul>
+                    <li data-en="Java (Object-Oriented Programming)" data-ar="إتقان تام للغة Java">إتقان تام للغة Java</li>
+                    <li data-en="Desktop Utilities Development" data-ar="تطوير برمجيات خفيفة وأدوات فعالة">تطوير برمجيات خفيفة وأدوات فعالة</li>
+                </ul>
+            </div>
+
+            <!-- Skill Card 3 -->
+            <div class="skill-card glass-panel">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3 data-en="Web Development" data-ar="تطوير الويب">تطوير الويب</h3>
+                <ul>
+                    <li data-en="Front-end design (HTML5, CSS3, JS)" data-ar="تصميم واجهات المستخدم (HTML5, CSS3, JS)">تصميم واجهات المستخدم (HTML5, CSS3, JS)</li>
+                    <li data-en="Responsive Design Websites" data-ar="بناء مواقع ويب سريعة التجاوب">بناء مواقع ويب سريعة التجاوب</li>
+                </ul>
+            </div>
+
+            <!-- Skill Card 4 -->
+            <div class="skill-card glass-panel">
+                <div class="skill-icon"><i class="fas fa-gamepad"></i></div>
+                <h3 data-en="Game Development" data-ar="تطوير الألعاب">تطوير الألعاب</h3>
+                <ul>
+                    <li data-en="2D Games Design & Programming" data-ar="تصميم وبرمجة ألعاب خفيفة ثنائية الأبعاد">تصميم وبرمجة ألعاب خفيفة ثنائية الأبعاد</li>
+                    <li data-en="Game Logic & Object Movements" data-ar="التعامل مع منطق الألعاب وحركة العناصر">التعامل مع منطق الألعاب وحركة العناصر</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="soft-skills glass-panel mt-4">
+            <h3 data-en="Soft Skills & More" data-ar="مهارات إضافية">مهارات إضافية</h3>
+            <div class="badge-container">
+                <span class="badge" data-en="Problem Solving" data-ar="حل المشكلات">حل المشكلات</span>
+                <span class="badge" data-en="Logical Thinking" data-ar="التفكير المنطقي">التفكير المنطقي</span>
+                <span class="badge" data-en="Fast Self-Learning" data-ar="التعلم الذاتي السريع">التعلم الذاتي السريع</span>
+                <span class="badge" data-en="Teamwork" data-ar="العمل الجماعي">العمل الجماعي</span>
+                <span class="badge" data-en="Typing Speed & Accuracy" data-ar="سرعة الطباعة">سرعة الطباعة</span>
+                <span class="badge" data-en="Microsoft Office" data-ar="مايكروسوفت أوفيس">مايكروسوفت أوفيس</span>
+                <span class="badge" data-en="Under Pressure" data-ar="العمل تحت ضغط">العمل تحت ضغط</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="section-title" data-en="Featured Projects" data-ar="المشاريع البارزة">المشاريع البارزة</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80" alt="Snake Game AI">
+                </div>
+                <div class="project-info">
+                    <h3 data-en="Snake Game AI" data-ar="مشروع لعبة الثعبان (Snake Game AI)">مشروع لعبة الثعبان (Snake Game AI)</h3>
+                    <p data-en="Developed an advanced version of the classic Snake game integrating AI algorithms to enhance gameplay experience." data-ar="تطوير نسخة متطورة من لعبة الثعبان الكلاسيكية مع دمج خوارزميات الذكاء الاصطناعي لتحسين تجربة اللعب.">
+                        تطوير نسخة متطورة من لعبة الثعبان الكلاسيكية مع دمج خوارزميات الذكاء الاصطناعي لتحسين تجربة اللعب.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="FCI Website">
+                </div>
+                <div class="project-info">
+                    <h3 data-en="FCI Introduction Website" data-ar="موقع كلية الحاسبات والذكاء الاصطناعي">موقع كلية الحاسبات والذكاء الاصطناعي</h3>
+                    <p data-en="Designed and built a full website to showcase college departments and student services with a modern UI." data-ar="تصميم وبناء موقع ويب كامل لعرض أقسام الكلية والخدمات الطلابية بأسلوب عصري.">
+                        تصميم وبناء موقع ويب كامل لعرض أقسام الكلية والخدمات الطلابية بأسلوب عصري.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Desktop Utilities">
+                </div>
+                <div class="project-info">
+                    <h3 data-en="Smart Desktop Utilities" data-ar="أدوات برمجية ذكية">أدوات برمجية ذكية</h3>
+                    <p data-en="Built lightweight Java programs to manage daily tasks and automate simple workflows." data-ar="بناء برامج خفيفة بلغة Java لإدارة المهام اليومية أو أتمتة العمليات البسيطة.">
+                        بناء برامج خفيفة بلغة Java لإدارة المهام اليومية أو أتمتة العمليات البسيطة.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="ed-lang-container">
+            <div class="education glass-panel">
+                <h2 class="section-title mini" data-en="Education" data-ar="التعليم">التعليم</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h3 data-en="B.Sc. in Artificial Intelligence Engineering" data-ar="بكالوريوس هندسة الذكاء الاصطناعي">بكالوريوس هندسة الذكاء الاصطناعي</h3>
+                        <p data-en="Faculty of Artificial Intelligence Engineering - Delta University for Science and Technology." data-ar="كلية هندسة الذكاء الاصطناعي - جامعة الدلتا للعلوم والتكنولوجيا.">كلية هندسة الذكاء الاصطناعي - جامعة الدلتا للعلوم والتكنولوجيا.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="languages glass-panel">
+                <h2 class="section-title mini" data-en="Languages" data-ar="اللغات">اللغات</h2>
+                <div class="lang-item">
+                    <span class="lang-name" data-en="Arabic" data-ar="العربية">العربية</span>
+                    <span class="lang-level" data-en="Native" data-ar="اللغة الأم">اللغة الأم</span>
+                    <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                </div>
+                <div class="lang-item mt-2">
+                    <span class="lang-name" data-en="English" data-ar="الإنجليزية">الإنجليزية</span>
+                    <span class="lang-level" data-en="Good (Technical)" data-ar="مستوى جيد">مستوى جيد</span>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 data-en="Mohamed Shabaan" data-ar="محمد محمود شعبان">محمد محمود شعبان</h3>
+            <p data-en="Building tomorrow's intelligent solutions, today." data-ar="نبني حلول الغد الذكية، اليوم.">نبني حلول الغد الذكية، اليوم.</p>
+            <div class="social-links footer-socials">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright" style="direction: ltr;">&copy; 2026 Mohamed Shabaan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
