@@ -53,6 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Cursor Blob Logic ---
+    const cursorBlob = document.getElementById('cursor-blob');
+    if (cursorBlob) {
+        document.addEventListener('mousemove', (e) => {
+            // Use requestAnimationFrame for smoother performance if needed, but this is simple enough
+            cursorBlob.style.left = `${e.clientX}px`;
+            cursorBlob.style.top = `${e.clientY}px`;
+        });
+    }
+
     // --- Language Toggle Logic ---
     const langToggleBtn = document.getElementById('langToggle');
     let currentLang = 'ar';
@@ -116,10 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const animateOnScroll = (entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
+                
+                // Add floating animation after entrance
+                setTimeout(() => {
+                    entry.target.classList.add('animate-float');
+                    // Stagger the floats so they don't look uniform
+                    entry.target.style.animationDelay = `${(Math.random() * 2).toFixed(1)}s`;
+                }, 600);
+                
                 observer.unobserve(entry.target);
             }
         });
@@ -129,11 +147,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial styles for animation
     const glassPanels = document.querySelectorAll('.glass-panel');
-    glassPanels.forEach(panel => {
+    glassPanels.forEach((panel, index) => {
         panel.style.opacity = '0';
         panel.style.transform = 'translateY(30px)';
-        panel.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        panel.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s, border-color 0.3s';
+        
+        // Add floating animation setup
+        // It will be added after it appears to not conflict with the entrance transform
         scrollObserver.observe(panel);
+        
+        // Give each panel a slight floating staggered animation once it's in view
+        setTimeout(() => {
+             if(panel.style.opacity === '1') {
+                 panel.classList.add('animate-float');
+                 panel.style.animationDelay = `${index * 0.2}s`;
+             }
+        }, 1000);
     });
 
     // --- Smooth Scrolling for anchor links ---

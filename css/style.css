@@ -30,11 +30,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    text-align: right;
 }
 
 body.lang-en {
     font-family: var(--font-en);
     direction: ltr;
+    text-align: left;
 }
 
 body.lang-en .social-links,
@@ -52,6 +54,32 @@ body.lang-en .location-info {
     z-index: -1;
     pointer-events: none;
     opacity: 0.5;
+}
+
+/* Dynamic Cursor Blob */
+#cursor-blob {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 242, 254, 0.15) 0%, rgba(142, 45, 226, 0.1) 40%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+    transition: left 0.2s cubic-bezier(0.25, 1, 0.5, 1), top 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Floating Animation Utility */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: floating 6s ease-in-out infinite;
 }
 
 /* Glassmorphism Classes */
@@ -146,6 +174,7 @@ body[dir="rtl"] .section-title.mini::after {
     width: 100%;
     z-index: 1000;
     background: rgba(10, 11, 16, 0.8);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--glass-border);
     transition: padding 0.3s ease;
@@ -484,6 +513,7 @@ body.lang-en .skill-card ul li::before {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .project-img-wrapper img {
